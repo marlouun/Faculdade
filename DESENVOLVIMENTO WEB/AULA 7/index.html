@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Meu primeiro formulário</legend>
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" value="@gmail.com" required>
+            <br>
+            <label for="senha">Senha</label>
+            <input type="week" id="senha" name="senha" required>
+            <br>
+            <hr>
+            <div>
+                <input type="radio" id="masculino" name="genero" >
+                <label for="masculino">Masculino</label>
+                <br>
+                <input type="radio" id="feminino" name="genero" checked>
+                <label for="feminino">Feminino</label>
+                <br>
+                <input type="radio" id="sem-informacao" name="genero">
+                <label for="sem-informacao">Não quero informar</label>
+            </div>
+            <hr>
+            <div>
+                <h4>Lista de compras!</h4>
+                <input type="checkbox" name="feijao" id="feijao" checked>
+                <label for="feijao">Feijão</label>
+                <br>
+                <input type="checkbox" name="arroz" id="arroz" checked>
+                <label for="arroz">Arroz</label>
+                <br>
+                <input type="checkbox" name="atum" id="atum">
+                <label for="atum">Atum</label>
+                <br>
+                <input type="checkbox" name="batata" id="batata">
+                <label for="batata">Batata</label>
+            </div>
+            <hr>
+            <select name="estados" id="estados">
+                <optgroup label="Sul">
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="PR" selected>Paraná</option>
+                </optgroup>
+                <optgroup label="Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="ES">Espirito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+            </select>
+            <hr>
+            <label for="feedback">Feedback</label>
+            <textarea name="feedback" id="feedback" 
+                cols="30" rows="10">
+
+            </textarea>
+            <hr>
+
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="Chrome">
+                <option value="Firefox">
+            </datalist>
+            <br>
+            <input type="reset">
+            <input type="submit">
+        </fieldset>
+    </form>
+</body>
+</html>
